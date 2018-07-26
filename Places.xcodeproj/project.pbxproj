@@ -19,6 +19,8 @@
 		DE4B9DFB210A2E5400D46FC2 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9DFA210A2E5400D46FC2 /* PlacesTableViewController.swift */; };
 		DE4B9DFD210A2EAD00D46FC2 /* CreateNewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9DFC210A2EAD00D46FC2 /* CreateNewPlaceViewController.swift */; };
 		DE4B9E00210A32BD00D46FC2 /* PlacesTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4B9DFF210A32BD00D46FC2 /* PlacesTable.storyboard */; };
+		DE4B9E02210A3AEB00D46FC2 /* PlacesTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9E01210A3AEB00D46FC2 /* PlacesTabBarViewController.swift */; };
+		DE4B9E04210A3BBA00D46FC2 /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9E03210A3BBA00D46FC2 /* PlacesPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		DE4B9DFA210A2E5400D46FC2 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		DE4B9DFC210A2EAD00D46FC2 /* CreateNewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceViewController.swift; sourceTree = "<group>"; };
 		DE4B9DFF210A32BD00D46FC2 /* PlacesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesTable.storyboard; sourceTree = "<group>"; };
+		DE4B9E01210A3AEB00D46FC2 /* PlacesTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTabBarViewController.swift; sourceTree = "<group>"; };
+		DE4B9E03210A3BBA00D46FC2 /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		9DC8C27F210A1DAE00A4B391 = {
 			isa = PBXGroup;
 			children = (
+				DE4B9E03210A3BBA00D46FC2 /* PlacesPresenter.swift */,
 				9DC8C28A210A1DAE00A4B391 /* Places */,
 				9DC8C289210A1DAE00A4B391 /* Products */,
 			);
@@ -101,6 +106,7 @@
 		9DC8C2A7210A1F5000A4B391 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DE4B9E01210A3AEB00D46FC2 /* PlacesTabBarViewController.swift */,
 				9DC8C2AC210A1F9F00A4B391 /* MapViewController.swift */,
 				DE4B9DF8210A2E3700D46FC2 /* VisitedPlacesViewController.swift */,
 				DE4B9DFA210A2E5400D46FC2 /* PlacesTableViewController.swift */,
@@ -199,9 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4B9DF4210A2A4A00D46FC2 /* Place.swift in Sources */,
+				DE4B9E04210A3BBA00D46FC2 /* PlacesPresenter.swift in Sources */,
 				DE4B9DF7210A2AFB00D46FC2 /* PlaceController.swift in Sources */,
 				9DC8C28C210A1DAE00A4B391 /* AppDelegate.swift in Sources */,
 				9DC8C2AD210A1F9F00A4B391 /* MapViewController.swift in Sources */,
+				DE4B9E02210A3AEB00D46FC2 /* PlacesTabBarViewController.swift in Sources */,
 				DE4B9DF9210A2E3700D46FC2 /* VisitedPlacesViewController.swift in Sources */,
 				DE4B9DFD210A2EAD00D46FC2 /* CreateNewPlaceViewController.swift in Sources */,
 				DE4B9DFB210A2E5400D46FC2 /* PlacesTableViewController.swift in Sources */,
@@ -355,7 +363,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Places;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leastudios.Places;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Places;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leastudios.Places;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -8,12 +8,15 @@
 
 import UIKit
 
-class VisitedPlacesViewController: UIViewController {
+class VisitedPlacesViewController: UIViewController, PlacesPresenter, PlacesTableViewControllerDelegate {
 
     var mapViewController: MapViewController!
     var placesTableViewController: PlacesTableViewController!
+    var placeController: PlaceController?
     
-
+    func placesWasSelected(place: Place) {
+        mapViewController.location = place.location
+    }
     
     // MARK: - Navigation
 
@@ -22,10 +25,12 @@ class VisitedPlacesViewController: UIViewController {
         
         if let tableVC = segue.destination as? PlacesTableViewController {
             placesTableViewController = tableVC
+            placesTableViewController.placeController = placeController
+            placesTableViewController.delegate = self
         }
         
         if let mapVC = segue.destination as? MapViewController {
-            MapViewController = mapVC
+            mapViewController = mapVC
         }
     }
     

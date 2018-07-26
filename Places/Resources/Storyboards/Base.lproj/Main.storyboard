@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="37.600000000000001" y="-457.42128935532236"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Places Tab Bar View Controller-->
         <scene sceneID="CnZ-AV-Q9f">
             <objects>
-                <tabBarController id="Xa0-vE-o84" sceneMemberID="viewController">
+                <tabBarController id="Xa0-vE-o84" customClass="PlacesTabBarViewController" customModule="Places" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fDM-4o-29S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -8,29 +8,21 @@
 
 import UIKit
 
-class CreateNewPlaceViewController: UIViewController {
+class CreateNewPlaceViewController: UIViewController, PlacesPresenter {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var latitudeTextfield: UITextField!
     @IBOutlet weak var longitudeTextfield: UITextField!
-    
+    var placeController: PlaceController?
 
     @IBAction func createNewPlace(_ sender: Any) {
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        guard let name = nameTextField.text,
+        let latitudeString = latitudeTextfield.text,
+        let longitudeString = longitudeTextfield.text,
+        let latitude = Double(latitudeString),
+            let longitude = Double(longitudeString) else {return}
+        
+        placeController?.createPlace(withName: name, latitude: latitude, longitude: longitude)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
